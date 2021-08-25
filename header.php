@@ -21,7 +21,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto pl-5">
       <li class="nav-item pr-3">
-        <a class="nav-link" href="flims.php">
+        <a class="nav-link" href="films.php">
         <i class="fa fa-video"></i>
           <span>Flims</span>
           </a>
