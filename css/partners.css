@@ -1,0 +1,32 @@
+h4 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom:27px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p#partner-words {
+    font-size: 1rem;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+.ion-minus::before {
+    content: "~";
+}
+
+.portfolio{
+    background-color:#f6f6f6;
+	padding:60px 0px;
+	font-size:13px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.portfolio .img-rounded {
+    width: 100%;
+    margin: 15px 0px;
+}

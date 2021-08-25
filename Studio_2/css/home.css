@@ -1,0 +1,48 @@
+
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+p.identity-description {
+    color: black !important;
+    font-size: 1rem;
+}
+
+h1.title {
+    color:rgb(194, 83, 4); /*chocolate*/
+}
+
+span.identity {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+a[type="button"] {
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+a[type="button"] i {
+    font-size: 20px;
+    color: black;
+}
+
+.big-image img {
+        width: 100%; /* You can set the dimensions to whatever you want */
+        height: 420px;
+        object-fit: cover;
+}
+
+.small-image img {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 210px;
+    object-fit: cover;
+}

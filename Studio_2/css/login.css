@@ -1,0 +1,81 @@
+body {
+    max-width: 100%;
+    background-image: url("../img/listening_to_music.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+article {
+    padding: 0 !important;
+    overflow: hidden;
+}
+div.card {
+    margin-top: 14px;
+    width: 550px !important
+}
+#member-question {
+    text-align: center;
+}
+
+.card-body {
+    width:80%;
+}
+form {
+    width: 100%;
+}
+
+ div#text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+
+/*the form*/
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    border-radius: 8px;
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-google {
+    border-radius: 8px;
+    background-color: #FF4108;
+    color: #fff;
+}
+
+#signin-buttons i {
+    padding-left: 15px;
+    font-size: 1.5em;
+}
+
+#create-account-button {
+    padding: 0 100px 0 100px;
+}
