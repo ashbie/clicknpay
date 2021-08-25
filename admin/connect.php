@@ -1,11 +1,16 @@
 
 <?php
-$localhost = "localhost"; //your host name
-$username = "root"; // your database name
-$password = ""; // your database password
-$dbname = "registration";
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$con = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db); 
 
-$con = new mysqli($localhost, $username, $password, $dbname);
 
 
 if($con->connect_error) {

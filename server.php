@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-
+	// mysql://ba85d70c3a2d2f:826e24f7@us-cdbr-east-04.cleardb.com/heroku_e2fa3606b1bd100?reconnect=true
 	// variable declaration
 	$admin = "";
 	$name = "";
@@ -13,7 +13,16 @@
 	$_SESSION['success'] = "";
 
 	// connect to user database
-	$db = mysqli_connect('localhost', 'root', '', 'registration');
+	//Get Heroku ClearDB connection information
+	$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+	$cleardb_server = $cleardb_url["host"];
+	$cleardb_username = $cleardb_url["user"];
+	$cleardb_password = $cleardb_url["pass"];
+	$cleardb_db = substr($cleardb_url["path"],1);
+	$active_group = 'default';
+	$query_builder = TRUE;
+	// Connect to DB
+	$db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db); 
 
 	// REGISTER USER
 	if (isset($_POST['reg_user'])) {
